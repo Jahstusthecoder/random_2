@@ -5,7 +5,13 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-  makeCircle(100, 50, 25, "red", 0.25)
+  makeCircle( 50, 50, 25, "red", 1)
+  
+makeCircle( 35, 45, 5, "black", 1)
+
+makeCircle( 65, 45, 5, "black", 1)
+
+makeRect(30, 55, 40, 5, "indigo", 1)
 
 }
 
@@ -14,7 +20,7 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    
+  makeImage("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSccBQWSM4gPpL-apmj5qFxbIyt2yigxy0hN19un09EV_PgQneH", 50, 0, 25, 25, 1)   
 }
 
 
@@ -22,7 +28,8 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+      
+     makeImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQHGGY9kWTtwsynhZSTVyFn45mskmBFZmuoRx5CZ6mca4Cei_y4w", 75, 25, 25, 75, 1) 
 }
 
 
@@ -36,7 +43,7 @@ function createRandomScene() {
     var number = Math.random()
 
     // If the number is ssless than 0.33, call the function to create your first scene.
-    } if (number<.33){
+    if (number<.33){
         createFirstScene()
     } else if (number<.67){
         createSecondScene()
